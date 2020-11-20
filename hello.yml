@@ -1,6 +1,10 @@
-- name: Hello World Sample
+- name: Install Zabbix
   hosts: all
   tasks:
-    - name: Hello Message
+    - name: Install prerequisites
+      apt: pkg={{ item }} state=present update_cache=yes
+      with_items:
+        - wget
+        - net-tools
       debug:
-        msg: "Hello World!"
+        msg: "Done!"
