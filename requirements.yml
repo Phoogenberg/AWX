@@ -1,0 +1,3 @@
+# Install a role from GitHub
+- name: ansible-zabbix-web
+  src: https://github.com/dj-wasabi/ansible-zabbix-web
