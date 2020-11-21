@@ -7,5 +7,6 @@
     - name: Install prerequisites
       apt: 
         pkg:
+        - apache2
         - wget
         - net-tools
