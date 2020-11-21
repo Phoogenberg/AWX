@@ -1,5 +1,8 @@
 - name: Install Zabbix
   hosts: all
+  become: yes
+  become_user: root
+  become_method: sudo
   tasks:
     - name: Install prerequisites
       apt: pkg={{ item }} state=present update_cache=yes
