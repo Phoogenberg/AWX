@@ -4,4 +4,5 @@ roles:
   - name: dj-wasabi.zabbix-server
   - name: geerlingguy.apache
   - name: dj-wasabi.zabbix-web
+    src: https://github.com/Phoogenberg/ansible-zabbix-web
 
